@@ -16,7 +16,7 @@ function ButtonLink({
   return (
     <a
       className={cn(
-        "w-fit h-fit bg-primary text-background p-10 rounded-3xl transition duration-500 ease-out hover:scale-110",
+        "w-fit h-fit theme-primary p-10 rounded-3xl transition duration-500 ease-out hover:scale-110",
         className,
       )}
       href={href}
@@ -38,7 +38,7 @@ export default function Home() {
         <div className="flex-2 flex items-center justify-center">
           <ButtonLink
             href="https://forms.gle/ZYESVUPDZFtXi4zy5"
-            className="bg-contrast text-background warm-glow "
+            className="theme-contrast glow-warm"
           >
             Join the Exec
           </ButtonLink>

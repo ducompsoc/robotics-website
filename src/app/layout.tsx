@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={cn("h-full antialiased", rubik.className)}>
-      <body className="min-h-full flex flex-col bg-gradient text-foreground">
+      <body className="min-h-full flex flex-col theme-gradient">
         {children}
       </body>
     </html>

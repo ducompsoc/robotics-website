@@ -2,8 +2,9 @@
 
 @theme inline {
   --color-background: #140316;
-  --color-background-warm: #5a092a;
   --color-foreground: #fde5ff;
+  --color-light: #fef3ff;
+  --color-warm: #5a092a;
   --color-primary: #833389;
   --color-primary-muted: #68246d;
   --color-contrast: #f79100;
@@ -11,16 +12,37 @@
   --font-rubik: var(--font-rubik);
 }
 
-.bg-gradient {
+.bg-gradient,
+.theme-gradient {
   background: linear-gradient(
     to top,
-    var(--color-background-warm) 0%,
+    var(--color-warm) 0%,
     #3d0622 10%,
     #20041a 40%,
     var(--color-background) 100%
   );
 }
 
-.warm-glow {
-  box-shadow: 0 0 3em var(--color-background-warm);
+.theme-main {
+  @apply bg-background text-foreground;
+}
+
+.theme-gradient {
+  @apply text-foreground;
+}
+
+.theme-light {
+  @apply bg-light text-background;
+}
+
+.theme-primary {
+  @apply bg-primary text-background;
+}
+
+.theme-contrast {
+  @apply bg-contrast text-background;
+}
+
+.glow-warm {
+  box-shadow: 0 0 3em var(--color-warm);
 }
